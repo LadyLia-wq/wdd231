@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WDD 231 Course Home Page">
+    <meta name="author" content="Halia Yayra Khayat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="brand">
+                <img src="images/logo.jpg" alt="Site Logo">
+                <span>Halia Yayra Khayat</span>
+            </div>
+
+            <button id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger">&#9776;</span>
+                <span class="close">&#10005;</span>
+            </button>
+
+        </header>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber/index.html">Chamber Project</a></li>
+                <li><a href="final/index.html">Final Project</a></li>
+            </ul>
+            </nav>
+        <main>
+            <div>
+                <h1>Home</h1>
+            </div>
+            
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    Detail-oriented and integrity-driven professional with strong experience in 
+                    data accuracy, record review, customer support, and process compliance. 
+                    Proven ability to audit information, analyze records, and ensure adherence to 
+                    documented standards. Adept at working with oral and digital records, providing 
+                    structured feedback, and supporting quality improvement initiatives. 
+                    Passionate about family history, service, and excellence, with a collaborative 
+                    mindset and strong ethical foundation. Always open to learn.
+                </p>
+            </section>
+
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Student portrait">
+            </section>
+
+            <section class="courses">
+                <h2>Web Certificate Courses</h2>
+
+                <div class="filters">
+                <button data-filter="all">All</button>
+                <button data-filter="cse">CSE</button>
+                <button data-filter="wdd">WDD</button>
+                </div>
+
+                <div id="courseCards"></div>
+
+                <p id="totalCredits"></p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://github.com/ladylia-wq" aria-label="GitHub">
+                <img src="images/github.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/haliakhayat-2002/" aria-label="LinkedIn">
+                <img src="images/linkedin.png" alt="">
+                </a>
+            </div>
+
+            <p>
+                &copy; <span id="year"></span> Halia Yayra Khayat • Ghana
+            </p>
+
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
+
+

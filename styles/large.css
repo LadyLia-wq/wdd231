@@ -1,0 +1,55 @@
+@media (min-width: 768px) {
+
+  /* ===== HEADER ===== */
+  #menuBtn {
+    display: none;
+  }
+
+  header,footer {
+    color: black;
+    background-color: rgb(253, 252, 253);
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li a {
+    padding: 1rem 1.5rem;
+  }
+
+  /* ===== MAIN LAYOUT ===== */
+  main {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  main div {
+    grid-column: 1 / -1;
+  }
+
+  main section {
+    text-align: center;
+  }
+
+  main p {
+    text-align: left;
+  }
+
+  main h2 {
+    background-color: black;
+    color: white;
+  }
+
+  .courses {
+    grid-column: 1 / -1;
+  }
+
+}

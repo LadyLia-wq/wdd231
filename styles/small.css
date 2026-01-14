@@ -1,0 +1,176 @@
+/* ===== GLOBAL STYLES ===== */
+:root {
+  --primary: #e6e3e3;
+  --secondary: #131111;
+  --accent: #414243;
+  --completed: #dff0d8;
+  --text: #111;
+  --bg: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand img {
+  width: 40px;
+}
+
+/* ===== HAMBURGER BUTTON ===== */
+#menuBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Hide close icon by default */
+#menuBtn .close {
+  display: none;
+}
+
+/* When menu is open */
+#menuBtn.open .hamburger {
+  display: none;
+}
+
+#menuBtn.open .close {
+  display: inline;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  display: none;
+  background-color: var(--secondary);
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  display: block;
+  padding: 0.75rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a.active {
+  background-color: var(--accent);
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: 1rem;
+}
+
+section {
+  background: #fefefe;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* ===== STUDENT PHOTO ===== */
+.photo img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+/* ===== COURSES ===== */
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--secondary);
+  background: #fff;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+#courseCards {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.course-card {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.course-card.completed {
+  background-color: var(--completed);
+  font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer img {
+  width: 28px;
+}
