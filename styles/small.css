@@ -1,6 +1,6 @@
 /* ===== GLOBAL STYLES ===== */
 :root {
-  --primary: #fafbfc;
+  --primary: #568abf;
   --secondary: #131111;
   --accent: #5b5b5c;
   --completed: #dff0d8;
@@ -20,7 +20,7 @@ body {
 }
 
 main h2 {
-    background-color: black;
+    background-color: rgb(8, 8, 8);
     color: white;
     text-align: center;
 }
