@@ -1,8 +1,8 @@
 /* ===== GLOBAL STYLES ===== */
 :root {
-  --primary: #568abf;
-  --secondary: #131111;
-  --accent: #5b5b5c;
+  --primary: #f6f7f7;
+  --secondary: #0e3c2e;
+  --accent: #a1d3af;
   --completed: #dff0d8;
   --text: #111;
   --bg: #f5f5f5;
@@ -20,7 +20,7 @@ body {
 }
 
 main h2 {
-    background-color: rgb(8, 8, 8);
+    background-color: var(--secondary);
     color: white;
     text-align: center;
 }
