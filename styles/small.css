@@ -1,10 +1,10 @@
 /* ===== GLOBAL STYLES ===== */
 :root {
   --primary: #f6f7f7;
-  --secondary: #0e3c2e;
+  --secondary: #9e9f9e;
   --accent: #1e1e1e;
   --completed: #dff0d8;
-  --text: #111;
+  --text: #030303;
   --bg: #f5f5f5;
 }
 
@@ -21,7 +21,7 @@ body {
 
 main h2 {
     background-color: var(--secondary);
-    color: white;
+    color: var(--text);
     text-align: center;
 }
 
@@ -55,7 +55,6 @@ header {
   background: none;
   border: none;
   color: rgb(7, 7, 7);
-  background-color: var(--accent);
   font-size: 1.8rem;
   cursor: pointer;
   position: relative;
