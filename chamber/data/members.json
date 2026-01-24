@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Alpha Electronics",
+      "address": "12 Market Street",
+      "phone": "0240000001",
+      "website": "https://alpha.com",
+      "image": "biz1.jpg",
+      "level": 3,
+      "description": "Electronics supplier"
+    },
+    {
+      "name": "Bright Foods",
+      "address": "45 Central Ave",
+      "phone": "0240000002",
+      "website": "https://brightfoods.com",
+      "image": "biz2.jpg",
+      "level": 2,
+      "description": "Food distributor"
+    },
+    {
+      "name": "City Motors",
+      "address": "Ring Road",
+      "phone": "0240000003",
+      "website": "https://citymotors.com",
+      "image": "biz3.jpg",
+      "level": 1,
+      "description": "Auto dealer"
+    },
+    {
+      "name": "Delta Furniture",
+      "address": "Main Mall",
+      "phone": "0240000004",
+      "website": "https://deltafurniture.com",
+      "image": "biz4.jpg",
+      "level": 2,
+      "description": "Furniture store"
+    },
+    {
+      "name": "Eco Energy",
+      "address": "Green Park",
+      "phone": "0240000005",
+      "website": "https://ecoenergy.com",
+      "image": "biz5.jpg",
+      "level": 3,
+      "description": "Solar energy company"
+    },
+    {
+      "name": "FastNet",
+      "address": "Tech Hub",
+      "phone": "0240000006",
+      "website": "https://fastnet.com",
+      "image": "biz6.jpg",
+      "level": 1,
+      "description": "Internet provider"
+    },
+    {
+      "name": "Golden Pharma",
+      "address": "Health Lane",
+      "phone": "0240000007",
+      "website": "https://goldenpharma.com",
+      "image": "biz7.jpg",
+      "level": 3,
+      "description": "Pharmaceutical supplier"
+    }
+  ]
+}
