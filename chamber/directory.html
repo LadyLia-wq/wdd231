@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Official Chamber of Commerce Directory">
-    <meta name="author" content="YOUR FULL NAME">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Explore the official business directory of the City Chamber of Commerce, featuring verified local businesses, services, and member organizations.">
+        <meta name="author" content="Halia Yayra Khayat">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Chamber Directory</title>
+        <title>Directory | City Chamber of Commerce</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- Facebook Meta -->
-    <meta property="og:title" content="Chamber of Commerce Directory">
-    <meta property="og:description" content="Business directory of local chamber members">
-    <meta property="og:image" content="https://username.github.io/wdd231/chamber/images/preview.png">
-    <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/larger.css">
-</head>
+        <!-- Facebook Meta -->
+        <meta property="og:title" content="City Chamber of Commerce Business Directory">
+        <meta property="og:description" content="Discover trusted local businesses and organizations through the official City Chamber of Commerce business directory. Connect, collaborate, and grow locally.">
+        <meta property="og:image" content="https://ladylia-wq.github.io/wdd231/chamber/images/preview.png">
+        <meta property="og:url" content="https://ladylia-wq.github.io/wdd231/chamber/directory.html">
 
-<body>
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
 
-<header>
-    <h1>City Chamber of Commerce</h1>
-    <nav>
-        <button id="menuBtn">☰</button>
-        <ul id="navMenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="directory.html" class="active">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <body>
 
-<main>
-    <section class="view-toggle">
-        <button id="gridBtn">Grid View</button>
-        <button id="listBtn">List View</button>
-    </section>
+        <header>
+            <h1>City Chamber of Commerce</h1>
+            <nav>
+                <button id="menuBtn">☰</button>
+                <ul id="navMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="members" class="grid-view"></section>
-</main>
+        <main>
+            <h1>Directory</h1>
+            <section class="view-toggle">
+                <button id="gridBtn">Grid View</button>
+                <button id="listBtn">List View</button>
+            </section>
 
-<footer>
-    <p>Contact: khayathalia@gmail.com | +233 242 446 448</p>
-    <p>Developed by HALIA YAYRA KHAYAT | WDD 231</p>
-    <p>© <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
-</footer>
+            <section id="members" class="grid-view"></section>
+        </main>
 
-<script src="js/directory.js"></script>
-<script src="js/footer.js"></script>
-</body>
+        <footer>
+            <p>Contact: khayathalia@gmail.com | +233 242 446 448</p>
+            <p>Developed by HALIA YAYRA KHAYAT | WDD 231</p>
+            <p>© <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+        </footer>
+
+        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/footer.js" defer></script>
+
+    </body>
 </html>
