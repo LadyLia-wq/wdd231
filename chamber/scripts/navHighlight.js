@@ -1,6 +1,7 @@
 const navLinks = document.querySelectorAll("#navMenu a");
 
-const currentPage = window.location.pathname.split("/").pop();
+const currentPage =
+    window.location.pathname.split("/").pop();
 
 navLinks.forEach(link => {
     const linkPage = link.getAttribute("href");
