@@ -24,6 +24,13 @@ nav a {
     text-decoration: none;
 }
 
+nav a.active {
+    background: #ffcc00;
+    color: #003366;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
 #members.grid-view {
     display: grid;
     grid-template-columns: 1fr;
