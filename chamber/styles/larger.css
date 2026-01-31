@@ -7,4 +7,9 @@
         display: flex;
         gap: 1rem;
     }
+
+    #menuBtn {
+    display: none;
+    }
+
 }
