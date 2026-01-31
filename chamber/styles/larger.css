@@ -3,13 +3,14 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    nav ul {
+    #navMenu {
         display: flex;
         gap: 1rem;
+        justify-content: center;
     }
 
     #menuBtn {
-    display: none;
+        display: none;
     }
 
 }
