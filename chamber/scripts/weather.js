@@ -1,6 +1,7 @@
 const tempSpan = document.getElementById("temp");
 const descSpan = document.getElementById("description");
 const forecastList = document.getElementById("forecast");
+const iconImg = document.getElementById("weatherIcon");
 
 // Ghana (Accra) location
 const lat = 5.55602; 
@@ -18,6 +19,11 @@ async function getWeather() {
         const current = data.list[0];
         tempSpan.textContent = current.main.temp.toFixed(1);
         descSpan.textContent = current.weather[0].description;
+
+        // icon
+        const iconCode = current.weather[0].icon;
+        iconImg.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+        iconImg.alt = current.weather[0].description;
 
         // 3-day forecast at midday
         forecastList.innerHTML = "";
