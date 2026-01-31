@@ -77,7 +77,7 @@ nav a.active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(241, 192, 32);
+    color: rgb(32, 46, 241);
     z-index: 1;
     text-align: center;
 }
