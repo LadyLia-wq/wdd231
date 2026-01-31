@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to the City Chamber of Commerce – supporting local businesses and economic growth.">
+    <meta name="author" content="Halia Yayra Khayat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | City Chamber of Commerce</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>City Chamber of Commerce</h1>
+    <nav>
+        <button id="menuBtn">☰</button>
+        <ul id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="City skyline and businesses">
+        <div class="hero-text">
+            <h2>Supporting Local Businesses</h2>
+            <a href="#" class="cta-btn">Join the Chamber</a>
+        </div>
+    </section>
+
+    <!-- CURRENT EVENTS -->
+    <section class="events">
+        <h2>Current Events</h2>
+        <p>📅 Business Networking Night – Feb 15</p>
+        <p>📅 Small Business Workshop – Mar 2</p>
+    </section>
+
+    <!-- WEATHER -->
+    <section class="weather">
+        <h2>Weather</h2>
+        <p>Temperature: <span id="temp"></span>°C</p>
+        <p>Condition: <span id="description"></span></p>
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast"></ul>
+    </section>
+
+    <!-- SPOTLIGHTS -->
+    <section class="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlight-container"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Contact: khayathalia@gmail.com | +233 242 446 448</p>
+    <p>Developed by HALIA YAYRA KHAYAT | WDD 231</p>
+    <p>© <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
