@@ -1,10 +1,17 @@
-document.querySelectorAll(".modal-btn").forEach(btn => {
+// Timestamp
+document.getElementById("timestamp").value =
+    new Date().toISOString();
+
+// Open modals
+document.querySelectorAll(".modal-open").forEach(btn => {
     btn.addEventListener("click", () => {
-        document.getElementById(btn.dataset.modal).showModal();
+        const modalId = btn.dataset.modal;
+        document.getElementById(modalId).showModal();
     });
 });
 
-document.querySelectorAll("dialog button").forEach(btn => {
+// Close modals
+document.querySelectorAll(".modal-close").forEach(btn => {
     btn.addEventListener("click", () => {
         btn.closest("dialog").close();
     });
