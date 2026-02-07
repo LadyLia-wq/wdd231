@@ -1,12 +1,11 @@
-// Timestamp
-document.getElementById("timestamp").value =
-    new Date().toISOString();
+document.querySelectorAll(".modal-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.getElementById(btn.dataset.modal).showModal();
+    });
+});
 
-// Modal controls
-function openModal(id) {
-    document.getElementById(id).showModal();
-}
-
-function closeModal(id) {
-    document.getElementById(id).close();
-}
+document.querySelectorAll("dialog button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.closest("dialog").close();
+    });
+});
