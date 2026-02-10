@@ -25,7 +25,7 @@ export const places = [
 },
 {
   name: "National Museum",
-  image: "images/discover/national museum.webp",
+  image: "images/discover/nationalmuseum.webp",
   address: "Barnes Rd, Accra",
   description: "Museum preserving Ghana's cultural history."
 },
