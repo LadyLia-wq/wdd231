@@ -204,7 +204,9 @@ nav ul li {
 
 #discover-grid {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 1rem;
 }
 
 #discover-grid article {

@@ -1,4 +1,6 @@
 import { places } from "../data/discover.js";
+console.log("discover.js loaded");
+console.log(places);
 
 const grid = document.getElementById("discover-grid");
 
