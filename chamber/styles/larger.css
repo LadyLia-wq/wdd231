@@ -28,6 +28,27 @@
     .membership-cards {
         margin-top: 0;
     }
+
+    @media (min-width: 641px) {
+    #discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+    @media (min-width: 1025px) {
+    #discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    }
+
+    @media (min-width: 641px) {
+    #discover-grid img:hover {
+        filter: brightness(80%);
+        transform: scale(1.03);
+        transition: 0.3s;
+    }
+    }
+
 }
 
 }

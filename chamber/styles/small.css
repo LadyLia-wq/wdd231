@@ -202,3 +202,18 @@ nav ul li {
     margin-top: 0.3rem;
 }
 
+#discover-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+#discover-grid article {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+#discover-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
