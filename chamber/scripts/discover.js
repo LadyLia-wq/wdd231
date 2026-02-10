@@ -1,4 +1,4 @@
-import { places } from "../data/discover.mjs";
+import { places } from "../data/discover.js";
 
 const grid = document.getElementById("discover-grid");
 
