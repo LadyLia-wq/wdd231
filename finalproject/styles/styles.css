@@ -12,6 +12,7 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+/* HERO */
 .hero {
   width: 100%;
   overflow: hidden;
@@ -24,29 +25,30 @@ h1, h2, h3 {
   display: block;
 }
 
+/* HEADER */
 header {
   background: var(--primary);
   color: white;
   padding: 1rem;
 }
 
+/* LOGO */
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5px;
+  gap: 8px;
 }
 
 .logo img {
   height: 80px;
-  width: auto;
 }
 
 .logo span {
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: white;
 }
 
+/* NAVIGATION */
 nav {
   display: flex;
   justify-content: space-between;
@@ -66,19 +68,14 @@ nav ul li {
 nav a {
   color: white;
   text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
 }
 
-/* Active navigation link */
+/* hover & active share styling */
+nav a:hover,
 nav a.active {
-  background: var(--accent);
-  padding: 6px 10px;
-  border-radius: 4px;
-}
-
-nav a:hover {
   background: rgba(255,255,255,0.2);
-  padding: 6px 10px;
-  border-radius: 4px;
 }
 
 .menu-btn {
@@ -94,13 +91,14 @@ main {
   padding: 1rem;
 }
 
+/* CARD */
 .card {
   background: white;
   padding: 1rem;
   margin: 1rem 0;
   border-left: 5px solid var(--accent);
-    border-radius: 6px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -108,6 +106,15 @@ main {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 3px 0;
+}
+
+/* BUTTON LINKS INSIDE CARDS */
 .card a {
   color: var(--accent);
   font-weight: bold;
@@ -117,7 +124,7 @@ main {
   text-decoration: underline;
 }
 
-/* Support form container */
+/* SUPPORT FORM */
 .support-container {
   max-width: 600px;
   margin: auto;
@@ -127,7 +134,6 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Form layout */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -153,7 +159,6 @@ main {
   outline: none;
 }
 
-/* Submit button */
 .contact-form button {
   margin-top: 1.5rem;
   padding: 12px;
@@ -169,7 +174,7 @@ main {
   background: #0096c7;
 }
 
-/* Form action result page */
+/* RESULT / ACTION PAGE */
 .result-container {
   max-width: 600px;
   margin: auto;
@@ -178,6 +183,10 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
+}
+
+.result-text {
+  margin-bottom: 1rem;
 }
 
 .result-card {
@@ -189,48 +198,24 @@ main {
   border-radius: 5px;
 }
 
-.back-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 12px 20px;
-  background: var(--accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+.success-icon {
+  font-size: 3rem;
+  color: var(--accent);
+  margin-bottom: 10px;
 }
 
-.back-btn:hover {
-  background: #0096c7;
+/* ACTION BUTTONS */
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-/* Modal background */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-}
-
-/* Modal box */
-.modal-content {
-  background: white;
-  margin: 10% auto;
-  padding: 2rem;
-  width: 90%;
-  max-width: 500px;
-  border-radius: 8px;
-  position: relative;
-  text-align: center;
-}
-
+.action-btn,
 .modal-visit-btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 16px;
+  padding: 10px 18px;
   background: var(--primary);
   color: white;
   text-decoration: none;
@@ -238,29 +223,18 @@ main {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
+.action-btn:hover,
 .modal-visit-btn:hover {
   background: var(--accent);
   transform: translateY(-2px);
 }
 
-/* Close button */
-.close-btn {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  color: var(--accent);
-}
-
+/* DETAILS BUTTON */
 .detailsBtn {
   margin-top: 10px;
   padding: 8px 14px;
   background: transparent;
-  color: var(--accent);
+  color: var(--primary);
   border: 2px solid var(--accent);
   border-radius: 20px;
   cursor: pointer;
@@ -273,66 +247,44 @@ main {
   color: white;
 }
 
-.card h3 {
-  margin-bottom: 5px;
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
 }
 
-.card p {
-  margin: 3px 0;
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+  color: #000;
 }
 
-.success-icon {
-  font-size: 3rem;
+.modal > * {
+  color: inherit;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
   color: var(--accent);
-  margin-bottom: 10px;
 }
 
-.result-text {
-  margin-bottom: 1rem;
-}
-
-/* Result display */
-.result-card {
-  text-align: left;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  background: #f5f7fa;
-  border-left: 5px solid var(--accent);
-  border-radius: 5px;
-}
-
-/* Buttons container */
-.result-actions {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-/* Buttons */
-.action-btn {
-  padding: 10px 18px;
-  background: var(--primary);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.action-btn:hover {
-  background: var(--accent);
-  transform: translateY(-2px);
-}
-
-/* Secondary button */
-.action-btn.secondary {
-  background: var(--primary);
-}
-
-.action-btn.secondary:hover {
-  background: var(--accent);
-}
-
+/* FOOTER */
 footer {
   background: var(--primary);
   color: white;
@@ -340,7 +292,7 @@ footer {
   padding: 1rem;
 }
 
-/* Large screens */
+/* RESPONSIVE NAV */
 @media (min-width: 700px) {
   nav ul {
     display: flex;

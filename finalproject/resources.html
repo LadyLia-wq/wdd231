@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Student Tech Resource Hub</title>
+    <title>Student Tech Resource Hub</title>
 
-<meta name="description" content="Student learning resources for programming and technology.">
-<meta name="author" content="Halia Khayat">
+    <meta name="description" content="Student learning resources for programming and technology.">
+    <meta name="author" content="Halia Khayat">
 
-<meta property="og:title" content="Student Tech Resource Hub Learning Platform">
-<meta property="og:description" content="Discover programming and technology learning resources organized for students to improve tech skills.">
-<meta property="og:image" content="https://yourusername.github.io/wdd231/finalproject/images/preview.png">
-<meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/index.html">
+    <meta property="og:title" content="Student Tech Resource Hub Learning Platform">
+    <meta property="og:description" content="Discover programming and technology learning resources organized for students to improve tech skills.">
+    <meta property="og:image" content="https://ladylia-wq.github.io/wdd231/finalproject/images/preview.png">
+    <meta property="og:url" content="https://ladylia-wq.github.io/wdd231/finalproject/index.html">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
-<link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+  </head>
 
-</head>
+  <body>
 
-<body>
+    <header>
+      <nav>
+      <div class="logo">
+        <img src="images/logo.webp" alt="Student Tech Resource Hub Logo">
+        <span><h1>Tech Hub</h1></span>
+      </div>
 
-<header>
-<nav>
-<div class="logo">
-  <img src="images/logo.png" alt="Student Tech Resource Hub Logo">
-  <span><h1>Tech Hub</h1></span>
-</div>
+      <div class="menu-btn" id="menuBtn">☰</div>
 
-<div class="menu-btn" id="menuBtn">☰</div>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
 
-<ul id="navMenu">
-<li><a href="index.html">Home</a></li>
-<li><a href="resources.html">Resources</a></li>
-<li><a href="support.html">Support</a></li>
-</ul>
+      </nav>
+    </header>
 
-</nav>
-</header>
+    <main>
+      <h2>Learning Resources</h2>
 
-<main>
-<h1>Learning Resources</h1>
+      <p>
+      Below is a list of recommended platforms where students can learn
+      programming and technology skills.
+      </p>
 
-<p>
-Below is a list of recommended platforms where students can learn
-programming and technology skills.
-</p>
+      <div id="resourcesContainer"></div>
 
-<div id="resourcesContainer"></div>
+    </main>
 
-</main>
+    <footer>
+    <p>©2026 Student Tech Resource Hub</p>
+    </footer>
 
-<footer>
-<p>©2026 Student Tech Resource Hub</p>
-</footer>
+    <!-- Modal -->
+    <div id="resourceModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close-btn">&times;</span>
 
-<!-- Modal -->
-<div id="resourceModal" class="modal">
-  <div class="modal-content">
-    <span id="closeModal" class="close-btn">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalCategory"></p>
+        <p id="modalLevel"></p>
+        <p id="modalLink"></p>
+      </div>
+    </div>
 
-    <h2 id="modalTitle"></h2>
-    <p id="modalCategory"></p>
-    <p id="modalLevel"></p>
-    <p id="modalLink"></p>
-  </div>
-</div>
-
-<script type="module" src="scripts/main.js"></script>
-
-</body>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
 </html>
