@@ -90,16 +90,16 @@ function openModal(resource) {
   modal.style.display = "block";
 }
 
-/* Load saved resource on page load */
-const savedResource = localStorage.getItem("lastResource");
-
-if (savedResource) {
-  openModal(JSON.parse(savedResource));
-}
-
 /* Close modal */
-closeModal.onclick = () => modal.style.display = "none";
+closeModal.onclick = () => {
+  modal.style.display = "none";
+  localStorage.removeItem("lastResource");
+};
 
 window.onclick = e => {
-  if (e.target === modal) modal.style.display = "none";
+  if (e.target === modal) {
+    modal.style.display = "none";
+    localStorage.removeItem("lastResource");
+  }
 };
+
