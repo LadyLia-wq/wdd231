@@ -5,10 +5,13 @@
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--light);
+  font-family: 'Roboto', sans-serif;
 }
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
 
 header {
   background: var(--primary);
