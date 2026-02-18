@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Submission Received</title>
+
+<meta name="description" content="Form submission confirmation">
+<meta name="author" content="Halia Khayat">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <h2 style="padding:1rem;">Student Tech Resource Hub</h2>
+</header>
+
+<main>
+
+<section class="result-container">
+  <h1>✅ Message Sent Successfully</h1>
+
+  <p>Thank you for contacting us. Here is the information you submitted:</p>
+
+  <div id="result" class="result-card"></div>
+
+  <a href="index.html" class="back-btn">Return Home</a>
+</section>
+
+</main>
+
+<footer>
+<p>©2026 Student Tech Resource Hub</p>
+</footer>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("result").innerHTML = `
+<p><strong>Name:</strong> ${params.get("name")}</p>
+<p><strong>Email:</strong> ${params.get("email")}</p>
+<p><strong>Message:</strong> ${params.get("message")}</p>
+`;
+</script>
+
+</body>
+</html>

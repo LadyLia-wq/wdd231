@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Tech Resource Hub</title>
+
+<meta name="description" content="Student learning resources for programming and technology.">
+<meta name="author" content="Halia Khayat">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Tech Hub</h2>
+
+<div class="menu-btn" id="menuBtn">☰</div>
+
+<ul id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="support.html">Support</a></li>
+</ul>
+
+</nav>
+</header>
+
+<main>
+<h1>Learning Resources</h1>
+
+<p>
+Below is a list of recommended platforms where students can learn
+programming and technology skills.
+</p>
+
+<div id="resourcesContainer"></div>
+
+</main>
+
+<footer>
+<p>©2026 Student Tech Resource Hub</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+
+<!-- Modal -->
+<div id="resourceModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close-btn">&times;</span>
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalCategory"></p>
+    <p id="modalLevel"></p>
+    <p id="modalLink"></p>
+  </div>
+</div>
+
+</body>
+</html>
