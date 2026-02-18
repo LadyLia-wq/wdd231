@@ -20,6 +20,7 @@ async function loadResources() {
             <h3>${item.name}</h3>
             <p><strong>Category:</strong> ${item.category}</p>
             <p><strong>Level:</strong> ${item.level}</p>
+
             <button class="detailsBtn"
             data-name="${item.name}"
             data-category="${item.category}"
@@ -28,7 +29,7 @@ async function loadResources() {
             View Details
             </button>
         </div>
-        `;
+      `;
     });
 
   } catch (error) {
@@ -36,7 +37,8 @@ async function loadResources() {
     console.error(error);
   }
 }
-// Highlight active navigation link
+
+/* Highlight active navigation link */
 const currentPage = window.location.pathname.split("/").pop();
 
 document.querySelectorAll("nav a").forEach(link => {
@@ -45,33 +47,59 @@ document.querySelectorAll("nav a").forEach(link => {
   }
 });
 
-
 loadResources();
+
+/* Modal elements */
 const modal = document.querySelector("#resourceModal");
 const closeModal = document.querySelector("#closeModal");
 
+/* Handle card clicks */
 document.addEventListener("click", function(e) {
   if (e.target.classList.contains("detailsBtn")) {
 
-    document.getElementById("modalTitle").textContent =
-      e.target.dataset.name;
+    const resourceData = {
+      name: e.target.dataset.name,
+      category: e.target.dataset.category,
+      level: e.target.dataset.level,
+      link: e.target.dataset.link
+    };
 
-    document.getElementById("modalCategory").textContent =
-      "Category: " + e.target.dataset.category;
+    /* Save to local storage */
+    localStorage.setItem("lastResource", JSON.stringify(resourceData));
 
-    document.getElementById("modalLevel").textContent =
-      "Level: " + e.target.dataset.level;
-
-    document.getElementById("modalLink").innerHTML =
-      `<a href="${e.target.dataset.link}" target="_blank">Visit Website</a>`;
-
-    modal.style.display = "block";
+    openModal(resourceData);
   }
 });
 
+/* Open modal helper */
+function openModal(resource) {
+  document.getElementById("modalTitle").textContent =
+    resource.name;
+
+  document.getElementById("modalCategory").textContent =
+    "Category: " + resource.category;
+
+  document.getElementById("modalLevel").textContent =
+    "Level: " + resource.level;
+
+  document.getElementById("modalLink").innerHTML =
+    `<a href="${resource.link}" target="_blank" class="modal-visit-btn">
+      Visit Website
+    </a>`;
+
+  modal.style.display = "block";
+}
+
+/* Load saved resource on page load */
+const savedResource = localStorage.getItem("lastResource");
+
+if (savedResource) {
+  openModal(JSON.parse(savedResource));
+}
+
+/* Close modal */
 closeModal.onclick = () => modal.style.display = "none";
 
 window.onclick = e => {
   if (e.target === modal) modal.style.display = "none";
 };
-

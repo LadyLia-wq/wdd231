@@ -12,11 +12,39 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
 
 header {
   background: var(--primary);
   color: white;
   padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5px;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+.logo span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
 }
 
 nav {
@@ -199,6 +227,22 @@ main {
   text-align: center;
 }
 
+.modal-visit-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.modal-visit-btn:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
 /* Close button */
 .close-btn {
   position: absolute;
@@ -235,6 +279,58 @@ main {
 
 .card p {
   margin: 3px 0;
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.result-text {
+  margin-bottom: 1rem;
+}
+
+/* Result display */
+.result-card {
+  text-align: left;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f5f7fa;
+  border-left: 5px solid var(--accent);
+  border-radius: 5px;
+}
+
+/* Buttons container */
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.action-btn {
+  padding: 10px 18px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.action-btn:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Secondary button */
+.action-btn.secondary {
+  background: var(--primary);
+}
+
+.action-btn.secondary:hover {
+  background: var(--accent);
 }
 
 footer {
